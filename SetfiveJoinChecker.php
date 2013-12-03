@@ -1,15 +1,6 @@
 <?php
-require_once('php-sql-parser.php');
-// QUERY HERE
-$sql = 'select * from sf_guard_user u LEFT JOIN sf_guard_user_profile p ON u.id=p.id';
 
-// DB username, password, and database name here
-$checker = new Checker('myuser','mypassword','mydatabase');
-$checker->checkQuery($sql);
-
-
-
-class Checker
+class SetfiveJoinChecker
 {
   private $fks=array(),$dbUser,$dbPassword,$dbName,$dbHost;
   public function __construct($db_user,$db_password,$db_name,$db_host = 'localhost')

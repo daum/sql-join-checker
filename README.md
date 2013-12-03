@@ -18,6 +18,5 @@ FK not found for u.id (sf_guard_user.id) join on p.id (sf_guard_user_profile.id)
 Completed check. 
 ````
 
-To use this edit the runSetfiveChecker.php file and at the top put the query, your db user, password, and name.  
+To use the SetfiveJoinChecker class view the examples in example.php.
 
-The class can be easily modified to run through a list of SQL queries so you don't need to edit it each time.
